@@ -1,0 +1,15 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity or_gate is
+    Port (
+        INPUT1  : in  STD_LOGIC;    -- First input
+        INPUT2  : in  STD_LOGIC;    -- Second input
+        OUTPUT  : out STD_LOGIC     -- OR gate output
+    );
+end or_gate;
+
+architecture Behavioral of or_gate is
+begin
+    OUTPUT <= INPUT1 or INPUT2;     -- 2-input OR gate operation
+end Behavioral;
